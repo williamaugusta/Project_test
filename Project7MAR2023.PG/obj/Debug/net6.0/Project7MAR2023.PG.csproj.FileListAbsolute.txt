@@ -26,3 +26,17 @@ C:\Users\WilCil\source\repos\Project7MAR2023\Project7MAR2023\Project7MAR2023.PG\
 C:\Users\WilCil\source\repos\Project7MAR2023\Project7MAR2023\Project7MAR2023.PG\obj\Debug\net6.0\Project7MAR2023.PG.pdb
 C:\Users\WilCil\source\repos\Project7MAR2023\Project7MAR2023\Project7MAR2023.PG\obj\Debug\net6.0\Project7MAR2023.PG.genruntimeconfig.cache
 C:\Users\WilCil\source\repos\Project7MAR2023\Project7MAR2023\Project7MAR2023.PG\obj\Debug\net6.0\ref\Project7MAR2023.PG.dll
+C:\Users\WilCil\source\repos\Project_test\Project7MAR2023.PG\bin\Debug\net6.0\Project7MAR2023.PG.deps.json
+C:\Users\WilCil\source\repos\Project_test\Project7MAR2023.PG\bin\Debug\net6.0\Project7MAR2023.PG.runtimeconfig.json
+C:\Users\WilCil\source\repos\Project_test\Project7MAR2023.PG\bin\Debug\net6.0\Project7MAR2023.PG.dll
+C:\Users\WilCil\source\repos\Project_test\Project7MAR2023.PG\bin\Debug\net6.0\Project7MAR2023.PG.pdb
+C:\Users\WilCil\source\repos\Project_test\Project7MAR2023.PG\obj\Debug\net6.0\Project7MAR2023.PG.csproj.AssemblyReference.cache
+C:\Users\WilCil\source\repos\Project_test\Project7MAR2023.PG\obj\Debug\net6.0\Project7MAR2023.PG.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WilCil\source\repos\Project_test\Project7MAR2023.PG\obj\Debug\net6.0\Project7MAR2023.PG.AssemblyInfoInputs.cache
+C:\Users\WilCil\source\repos\Project_test\Project7MAR2023.PG\obj\Debug\net6.0\Project7MAR2023.PG.AssemblyInfo.cs
+C:\Users\WilCil\source\repos\Project_test\Project7MAR2023.PG\obj\Debug\net6.0\Project7MAR2023.PG.csproj.CoreCompileInputs.cache
+C:\Users\WilCil\source\repos\Project_test\Project7MAR2023.PG\obj\Debug\net6.0\Project7MAR2023.PG.dll
+C:\Users\WilCil\source\repos\Project_test\Project7MAR2023.PG\obj\Debug\net6.0\refint\Project7MAR2023.PG.dll
+C:\Users\WilCil\source\repos\Project_test\Project7MAR2023.PG\obj\Debug\net6.0\Project7MAR2023.PG.pdb
+C:\Users\WilCil\source\repos\Project_test\Project7MAR2023.PG\obj\Debug\net6.0\Project7MAR2023.PG.genruntimeconfig.cache
+C:\Users\WilCil\source\repos\Project_test\Project7MAR2023.PG\obj\Debug\net6.0\ref\Project7MAR2023.PG.dll
