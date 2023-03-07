@@ -1,0 +1,101 @@
+----- Data and Query Task (Basic)
+----- No.1
+create table Employee
+(
+    Id int,
+    EmployeeId character varying(10) UNIQUE NOT NULL ,
+    FullName character varying(100)  NOT NULL,
+    BirthDate date NOT NULL,
+    Address character varying(500),
+    CONSTRAINT "Employee_pkey" PRIMARY KEY (Id)
+)
+
+CREATE TABLE positionhistory
+(
+    Id Int,
+    Posid character varying(10) NOT NULL,
+    PosTitle character varying(100) NOT NULL,
+    Employeeid character varying(10) NOT NULL,
+    StartDate Date NOT NULL,
+    EndDate Date NOT NULL,
+    CONSTRAINT "PositionHistory_pkey" PRIMARY KEY (Id)
+)
+
+----- No.2
+INSERT INTO public.employee(id, employeeid, fullname, birthdate, address)
+VALUES (1, 10105001, 'Ali Anton', '19-AUG-1982','Jakarta Utara');
+
+INSERT INTO public.employee(id, employeeid, fullname, birthdate, address)
+VALUES (2, 10105002, 'Rara Siva', '01-JAN-1982','Mandalika');
+
+INSERT INTO public.employee(id, employeeid, fullname, birthdate, address)
+VALUES (3, 10105003, 'Rini Aini', '20-FEB-1982','Sumbawa Besar');
+
+INSERT INTO public.employee(id, employeeid, fullname, birthdate, address)
+VALUES (4, 10105004, 'Budi', '22-FEB-1982','Mataram Kota');
+
+INSERT INTO public.positionhistory(id, posid, postitle, employeeid, startdate, enddate)
+VALUES (1, 50000, 'IT Manager', 10105001, '01-JAN-2023', '28-FEB-2023');
+
+INSERT INTO public.positionhistory(id, posid, postitle, employeeid, startdate, enddate)
+VALUES (2, 50001, 'IT Sr.Manager', 10105001, '01-MAR-2023', '31-DEC-2023');
+
+INSERT INTO public.positionhistory(id, posid, postitle, employeeid, startdate, enddate)
+VALUES (3, 50002, 'Programmer Analyst', 10105002, '01-JAN-2023', '28-FEB-2023');
+
+
+INSERT INTO public.positionhistory(id, posid, postitle, employeeid, startdate, enddate)
+VALUES (4, 50003, 'Sr. Programmer Analyst', 10105002, '01-MAR-2023', '31-DEC-2023');
+
+INSERT INTO public.positionhistory(id, posid, postitle, employeeid, startdate, enddate)
+VALUES (5, 50004, 'IT Admin', 10105003, '01-JAN-2023', '28-FEB-2023');
+
+INSERT INTO public.positionhistory(id, posid, postitle, employeeid, startdate, enddate)
+VALUES (6, 50005, 'IT Secretary', 10105003, '01-MAR-2023', '31-DEC-2023');
+
+----- No.3
+CREATE OR REPLACE VIEW v_employee_position AS
+ SELECT a.employeeid,
+    a.fullname,
+    a.birthdate,
+    a.address,
+    b.postitle
+   FROM employee a
+     LEFT JOIN positionhistory b ON a.employeeid = b.employeeid AND CURRENT_DATE >= b.startdate AND CURRENT_DATE <= b.enddate;
+
+
+----- ETL, Datawarehouse and Analytics Task
+1.
+create table EmployeeData
+(
+    Id int,
+    EmployeeId character varying(10)  NOT NULL,
+    FullName character varying(100)  NOT NULL,
+    BirthDate date NOT NULL,
+    Address character varying(500),
+    Lastpositionid int,
+    Lastpositiontitle character varying(100) NOT NULL,
+    CONSTRAINT "EmployeeData_pkey" PRIMARY KEY (Id)
+)
+
+2.
+'10105001' | 'Latihan Pertama' | '1-JAN-2023'
+'10105001' | 'Latihan Kedua'   | '1-MAR-2023'
+'10105002' | 'Latihan Pertama' | '1-JAN-2023'
+'10105003' | 'Latihan Kedua'   | '1-MAR-2023'
+
+3.
+CREATE TABLE employee_training_history
+(
+    id integer NOT NULL,
+    employeeid character varying(10) NOT NULL,
+    fullname character varying(100)  NOT NULL,
+    birthdate date NOT NULL,
+    address character varying(500) ,
+    postitle character varying(500) ,
+    traningtype character varying(500) ,
+    completeddate date,
+    CONSTRAINT "EmployeeTraining_pk" PRIMARY KEY (id)
+)
+
+4.
